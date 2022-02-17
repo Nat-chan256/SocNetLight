@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+</head>
+<body>
+  <form th:method="POST" th:action="/signup" th:object="${user}">
+      <label for="login" text="Login"/>
+      <input type="text" id="login" field="*{login}" />
+
+      <label for="name" text="Name"/>
+      <input type="text" id="name" field="*{name}" />
+
+      <label for="surname" text="Surname"/>
+      <input type="text" id="surname" field="*{surname}" />
+
+      <label for="password" text="Password"/>
+      <input type="password" id="password" field="*{password}" />
+
+      <label for="confirmPassword" text="Confirm password"/>
+      <input type="password" id="confirmPassword" field="*{confirmPassword}" />
+
+      <input type="submit" value="Sign up" />
+  </form>
+</body>
+</html>
